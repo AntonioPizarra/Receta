@@ -1,0 +1,69 @@
+/***************************************************************/
+/*              hoja de estilo de cachopo.html                */
+/*              autor: Antonio González Mayorga                */
+/*              version: 1.0                                   */
+/*              fecha: noviembre de 2023                         */
+/*              comentario: trabajo de lenguaje de marcas      */
+/***************************************************************/
+
+/* buscar un par de fuentes que combinen, para títulos y para contenido */
+        
+        @font-face {
+            src:url(../font/crafter.otf) ;
+            font-family: regular;
+        }
+        
+        * {box-sizing:border-box;}
+        body{background-color: #f7f298;
+        margin:0;padding: 0;
+        background-image: url(../img/fondo.jpg);
+        background-size: 50% auto;
+        font-size: 1.1em;
+        }
+        
+        #wrapper{width: 60%;
+        background-color: #ffffff ;
+        margin: auto;
+        padding:2%;
+        }
+        
+        h1 {text-align: center;
+            font-family: regular;
+            font-size: 3em;
+            margin:4%;
+        }
+        
+        h2 {text-align: center;
+            font-style: italic;
+        }
+        
+        img{
+            width: 500px;
+            height: 350px;
+            margin:  auto;
+            display: flex;
+            justify-content: center;  
+        }
+        
+        ul {list-style-image: url(../img/redball.png);}
+        dt{font-weight: bold;
+        font-variant: small-caps;
+        text-decoration: overline underline;
+        color: red;
+        }
+        
+        @media screen and (width<655px){
+                #wrapper { width: 70%;}
+                img{ width: 60%;
+                    height: 70%;}
+                h1 { width: auto;
+                    font-size: 2em;}
+                body{ width: 100%;
+                    height: 100%;}   
+        }
+        
+        @media screen and (width<281px){
+                    h1{font-size: 1.7em;}
+                    h2{font-size: 1.4em;}
+                    body{font-size: 0.9em;}
+        }
